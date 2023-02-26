@@ -74,4 +74,14 @@
 .more-info {
   display: block;
   margin-top: 10px;
+}
+.more-info .links {
+  text-decoration: none;
+  color: #02c4c4;
+}
+.more-info .links:hover {
+  color: blue;
+}
+.more-info .links:active {
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */

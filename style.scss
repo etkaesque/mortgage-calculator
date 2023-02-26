@@ -106,4 +106,22 @@
 .more-info {
     display: block;
     margin-top: 10px;
+
+    .links {
+        text-decoration: none;
+
+        color:  #02c4c4;
+
+        &:hover {
+            color: blue;
+        }
+
+        &:active {
+
+            opacity: .8;
+        }
+    }
+
+
+
 }
