@@ -206,12 +206,12 @@ function calculateMortgage() {
     }
 
     if (DSTI>50) {
-        document.getElementById("DSTI").innerHTML = `DTI stess (kai palūkanos padidėja ${1.5}%): ${DSTI} %. Nepraeinate jautrumo testo! Maksimali reikšmė 50%.`;
+        document.getElementById("DSTI").innerHTML = `DTI stress (kai palūkanos padidėja ${1.5}%): ${DSTI} %. Nepraeinate jautrumo testo! Maksimali reikšmė 50%.`;
         document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
         document.getElementById("max-loan").style.color = "red";
         document.getElementById("DSTI").style.color = "red";
     } else {
-        document.getElementById("DSTI").innerHTML = `DTI stess (kai palūkanos padidėja ${1.5}%): ${DSTI} %.`;
+        document.getElementById("DSTI").innerHTML = `DTI stress (kai palūkanos padidėja ${1.5}%): ${DSTI} %.`;
         document.getElementById("DSTI").style.color = "black";
         document.getElementById("max-loan").style.color = "black";
     }
