@@ -184,7 +184,7 @@ function calculateMortgage() {
     document.getElementById("total-interest").innerHTML = `Iš viso sumokama palūkanų: ${totalInterest} €`;
 
     if (DTI>40) {
-        document.getElementById("DTI").innerHTML = `DTI: ${DTI} %. Pasiskolinti negalite, bendra įsipareigojimų įmoka negali viršyti 40% pajamų.`;
+        document.getElementById("DTI").innerHTML = `DTI: ${DTI} %. Pasiskolinti negalite, bendra mėn. įsipareigojimų įmoka negali viršyti 40% mėnesinių pajamų.`;
         document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
         document.getElementById("max-loan").style.color = "red";
         document.getElementById("DTI").style.color = "red";
@@ -195,7 +195,7 @@ function calculateMortgage() {
     }
 
     if (LTI>75) {
-        document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, paskola negali būti 75 kartų didesnė už atlyginimą`;
+        document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, paskola negali būti didesnė nei 75 kartai už jūsų mėnesines pajamas`;
         document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
         document.getElementById("max-loan").style.color = "red";
         document.getElementById("LTI").style.color = "red";

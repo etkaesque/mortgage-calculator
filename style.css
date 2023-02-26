@@ -8,7 +8,7 @@
 }
 
 .info-text {
-  background-color: aqua;
+  background-color: #00ffff;
   padding: 8px 10px;
   font-size: 0.85rem;
   border-radius: 10px;
@@ -16,6 +16,7 @@
   display: inline-block;
   position: absolute;
   left: 40px;
+  width: 200px;
 }
 
 .info-wrapper {
