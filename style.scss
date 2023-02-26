@@ -1,0 +1,55 @@
+.input-wrapper {
+
+    margin-top: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+   
+}
+
+.info-text {
+
+   
+    background-color:aqua;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    border-radius: 10px;
+    visibility: hidden;
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+ 
+    
+
+}
+
+
+
+.info-wrapper {
+
+    width: 25px;
+    height: 25px;
+
+    position: relative;
+
+
+    display: inline-block;
+
+
+
+    &:hover {
+
+        cursor: pointer;
+
+        .info-text {
+
+            visibility: visible;
+            z-index: 1;
+        }
+    }
+
+    
+}
+
