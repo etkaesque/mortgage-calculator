@@ -3,6 +3,14 @@
 
     margin-left: 20px;
 
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.main {
+    .calculator-explained {
+        margin-top: 100px;
+    }
 }
 
 .input-wrapper {
@@ -80,7 +88,7 @@
     border: none;
     padding: 10px 15px;
     border-radius: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Mulish', sans-serif;
     color: whitesmoke;
 
     &:hover {
@@ -93,4 +101,9 @@
         opacity: .8;
     }
 
+}
+
+.more-info {
+    display: block;
+    margin-top: 10px;
 }
