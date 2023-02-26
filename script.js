@@ -233,11 +233,11 @@ function calculateMortgage() {
     
     if (minIncome > disposible){
 
-        document.getElementById("disposibles").innerHTML = `Lėšos pragyvenimui: Pasiskolinti negalite. Jūsų minimalios lėšos pragyvenimui ${minIncome} €, tačiau jums lieka ${disposible} €.`;
+        document.getElementById("disposibles").innerHTML = `Lėšos pragyvenimui: Pasiskolinti negalite. Jūsų minimalios lėšos pragyvenimui ${minIncome} €, tačiau po visų įmokų jums lieka ${disposible} €.`;
         document.getElementById("disposibles").style.color = "red";
         document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
     } else {
-        document.getElementById("disposibles").innerHTML = `Lėšos pragyvenimui: Jūsų minimalios lėšos pragyvenimui ${minIncome} €, jums lieka ${disposible} €.`;
+        document.getElementById("disposibles").innerHTML = `Lėšos pragyvenimui: Jūsų minimalios lėšos pragyvenimui ${minIncome} €, po visų įmokų jums lieka ${disposible} €.`;
         document.getElementById("disposibles").style.color = "black";
     }
 
