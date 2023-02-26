@@ -32,7 +32,7 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
-.main {
+.main, .calculator-explained {
 
     margin-top: 50px;
     margin-left: auto;
@@ -286,8 +286,15 @@ body {
 
 .footer {
 
+    @include xl {
+
+        width: 100%;
+    }
+
+
     margin-bottom: 0px;
     padding: 20px;
+    padding-bottom: 50px;
     background-color: #ecf1f165;
     font-family: 'Mulish', sans-serif;
 }
