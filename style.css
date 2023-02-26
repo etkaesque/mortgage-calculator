@@ -24,6 +24,7 @@ body {
   background-position: 70%;
   background-size: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .header .img-wrapper h1 {
   color: white;
@@ -31,7 +32,7 @@ body {
   margin-left: 20px;
   margin-bottom: 7px;
   margin-top: 0px;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 .header .img-wrapper p {
   margin-top: 0px;
