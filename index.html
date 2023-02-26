@@ -18,6 +18,8 @@
     <main class="main">
         <section class="calculator-input">
 
+            <h2>Įveskite duomenis</h2>
+
             <div class="input-wrapper">
 
                 <label for="loanperiod">Paskolos laikotarpis, metais</label>
@@ -29,21 +31,11 @@
 
                 </div>
 
-           
-
-              
-
-
-                
-
-                
-
-
             </div>
 
             <div class="input-wrapper">
                 <label for="loanamount">Paskolos suma, eurais</label>
-                <input type="number" id="loanamount">
+                <input type="number" id="loanamount" required>
             </div>
 
             <div class="input-wrapper">
@@ -120,6 +112,9 @@
 
         <section class="calculator-output">
 
+            <h2>Informacija apie paskolą</h2>
+
+        
             <p id="monthly-payment">Mėn. įmoka už būsto kreditą:</p>
             <p id="DTI">DTI:</p>
             <p id="DSTI">DTI stress:</p>
@@ -128,12 +123,15 @@
             <p id="max-loan">Maksimaliai galima pasiskolinti:</p>
             <p id="loan-cost">Bendra sumokama suma:</p>
             <p id="total-interest">Iš viso sumokama palūkanų:</p>
+            <p id="anuity">Metodas: Anuitetas</p>
 
      
 
 
 
         </section>
+
+        <section class="calculator-explained"></section>
 
 
     </main>

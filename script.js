@@ -175,7 +175,7 @@ function calculateMortgage() {
 
     // calculates if disposible income is enough to live by using DTI stress
     
-    let disposible = monthlyIncome - obligationsMonthly - monthlyMortagePayment(interestDecimalStress, loanAmount, loanPeriod)
+    let disposible = monthlyIncome - obligationsMonthly - monthlyMortagePayment(interestDecimal, loanAmount, loanPeriod)
 
     console.log("disposible calc" + disposible)
 
@@ -206,7 +206,7 @@ function calculateMortgage() {
     }
 
     if (LTI>75) {
-        document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, paskola negali būti didesnė nei 75 kartai už jūsų mėnesines pajamas`;
+        document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, visi įsipareigojimai negali būti didesni nei 75 kartai jūsų mėnesinių pajamų.`;
         document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
         document.getElementById("max-loan").style.color = "red";
         document.getElementById("LTI").style.color = "red";
@@ -220,6 +220,7 @@ function calculateMortgage() {
 
         document.getElementById("disposibles").innerHTML = `Lėšos pragyvenimui: Pasiskolinti negalite. Jūsų minimalios lėšos pragyvenimui ${minIncome} €, tačiau jums lieka ${disposible} €.`;
         document.getElementById("disposibles").style.color = "red";
+        document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
     } else {
         document.getElementById("disposibles").innerHTML = `Lėšos pragyvenimui: Jūsų minimalios lėšos pragyvenimui ${minIncome} €, jums lieka ${disposible} €.`;
         document.getElementById("disposibles").style.color = "black";
