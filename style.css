@@ -167,25 +167,6 @@ body {
 .main .calculator-output {
   padding: 20px;
 }
-.main .calculator-explained {
-  margin-top: 100px;
-  padding: 20px;
-  margin-bottom: 100px;
-}
-.main .calculator-explained .more-info {
-  display: block;
-  margin-top: 10px;
-}
-.main .calculator-explained .more-info .links {
-  text-decoration: none;
-  color: #02c4c4;
-}
-.main .calculator-explained .more-info .links:hover {
-  color: blue;
-}
-.main .calculator-explained .more-info .links:active {
-  opacity: 0.8;
-}
 
 .footer {
   margin-top: 50px;
@@ -199,4 +180,23 @@ body {
   .footer {
     width: 100%;
   }
+}
+.footer .calculator-explained {
+  margin-top: 100px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.footer .calculator-explained .more-info {
+  display: block;
+  margin-top: 10px;
+}
+.footer .calculator-explained .more-info .links {
+  text-decoration: none;
+  color: #02c4c4;
+}
+.footer .calculator-explained .more-info .links:hover {
+  color: blue;
+}
+.footer .calculator-explained .more-info .links:active {
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */

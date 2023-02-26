@@ -251,6 +251,24 @@ body {
         padding: 20px;
     }
 
+   
+
+}
+
+.footer {
+
+    @include xl {
+
+        width: 100%;
+    }
+
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: #ecf1f165;
+    font-family: 'Mulish', sans-serif;
+
     .calculator-explained {
         margin-top: 100px;
         padding: 20px;
@@ -262,6 +280,7 @@ body {
             margin-top: 10px;
 
             .links {
+                
                 text-decoration: none;
 
                 color: #02c4c4;
@@ -281,20 +300,4 @@ body {
         }
     }
 
-
-}
-
-.footer {
-
-    @include xl {
-
-        width: 100%;
-    }
-
-    margin-top: 50px;
-    margin-bottom: 0px;
-    padding: 20px;
-    padding-bottom: 50px;
-    background-color: #ecf1f165;
-    font-family: 'Mulish', sans-serif;
 }
