@@ -122,7 +122,7 @@ function calculateMortgage() {
 
     // 2.1 MAX LTI: Will calculate maximum loan amount based on LTI. Annual income times 6 minus obilgation amount
 
-    maxLTI = (monthlyIncome * 72) - obligationsAmount
+    maxLTI = (monthlyIncome * 70) - obligationsAmount
 
     console.log(`Max LTI loan amount is ${maxLTI} €`)
 
