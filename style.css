@@ -74,7 +74,12 @@ body {
   }
 }
 .main .calculator-input .input-wrapper label {
-  text-align: center;
+  text-align: left;
+}
+@media (max-width: 649px) {
+  .main .calculator-input .input-wrapper label {
+    text-align: center;
+  }
 }
 .main .calculator-input .input-wrapper .input-info {
   display: flex;

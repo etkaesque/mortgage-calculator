@@ -114,7 +114,11 @@ body {
             }
 
             label {
-                text-align: center;
+                text-align: left;
+
+                @include sm {
+                    text-align: center;
+                }
             }
 
             .input-info {
