@@ -1,3 +1,7 @@
+.main, .header {
+  margin-left: 20px;
+}
+
 .input-wrapper {
   margin-top: 10px;
   display: flex;
@@ -6,9 +10,16 @@
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+.input-wrapper input {
+  background-color: rgb(235, 225, 225);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
 
 .info-text {
-  background-color: #00ffff;
+  background-color: #02c4c4;
+  color: white;
   padding: 8px 10px;
   font-size: 0.85rem;
   border-radius: 10px;
@@ -31,4 +42,21 @@
 .info-wrapper:hover .info-text {
   visibility: visible;
   z-index: 1;
+}
+
+.calculate-click {
+  margin-top: 20px;
+  background-color: #02c4c4;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: whitesmoke;
+}
+.calculate-click:hover {
+  color: white;
+  background-color: blue;
+}
+.calculate-click:active {
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,9 @@
+.main, .header {
+
+    margin-left: 20px;
+
+}
+
 .input-wrapper {
 
     margin-top: 10px;
@@ -6,13 +12,22 @@
     align-items: center;
     column-gap: 20px;
 
+    input {
+
+        background-color: rgb(235, 225, 225);
+        border: none;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
    
 }
 
 .info-text {
 
    
-    background-color:#00ffff;
+    background-color:#02c4c4;
+    color: white;
     padding: 8px 10px;
     font-size: 0.85rem;
     border-radius: 10px;
@@ -52,4 +67,26 @@
 
     
 }
+
+.calculate-click {
+    margin-top: 20px;
+    background-color: #02c4c4;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+
+    &:hover {
+        color: white;
+        background-color: blue;
+    }
+
+    &:active {
+
+        opacity: .8;
+    }
+    
+}
+
 

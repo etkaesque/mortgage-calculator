@@ -46,7 +46,7 @@ function calculateMortgage() {
     // 1. definitions:
 
     // 1.1 define stess interest
-    let interestStress = interest + 2;
+    let interestStress = interest + 1.5;
 
     // 1.2 define minimal income 
     let minIncome = kids * 200 + adults * 550
@@ -185,7 +185,7 @@ function calculateMortgage() {
     document.getElementById("monthly-payment").innerHTML = `Mėn. įmoka už būsto kreditą: ${mp} €`;
 
 
-    document.getElementById("DSTI").innerHTML = `DTI stess: ${DSTI} %`;
+    document.getElementById("DSTI").innerHTML = `DTI stess (kai palūkanos padidėja ${1.5}%): ${DSTI} %`;
 
 
     document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${maxLoan} €`;
