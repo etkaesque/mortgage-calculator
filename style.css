@@ -185,4 +185,11 @@ body {
 }
 .main .calculator-explained .more-info .links:active {
   opacity: 0.8;
+}
+
+.footer {
+  margin-bottom: 0px;
+  padding: 20px;
+  background-color: rgba(236, 241, 241, 0.3960784314);
+  font-family: "Mulish", sans-serif;
 }/*# sourceMappingURL=style.css.map */
