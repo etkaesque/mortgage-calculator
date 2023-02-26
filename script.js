@@ -39,6 +39,9 @@ function calculateMortgage() {
 
     let estateValue = 117000;
 
+    let adults = document.getElementById('adults').valueAsNumber;
+    let kids = document.getElementById('kids').valueAsNumber;
+
 
     // 1. definitions:
 
@@ -46,7 +49,10 @@ function calculateMortgage() {
     let interestStress = interest + 2;
 
     // 1.2 define minimal income 
-    let minIncome = 600;
+    let minIncome = kids * 200 + adults * 550
+
+
+    console.log("Min income"+ minIncome)
 
     // interest to decimal
     let interestDecimal = interest / 100
@@ -167,6 +173,11 @@ function calculateMortgage() {
         maxLoan = maxDTI
     }
 
+    // calculates if disposible income is enough to live by using DTI stress
+    
+    let disposible = monthlyIncome - obligationsMonthly - monthlyMortagePayment(interestDecimalStress, loanAmount, loanPeriod)
+
+    console.log("disposible calc" + disposible)
 
     // write to html
 
@@ -205,6 +216,14 @@ function calculateMortgage() {
         document.getElementById("max-loan").style.color = "black";
     }
     
+    if (minIncome > disposible){
+
+        document.getElementById("disposibles").innerHTML = `Lėšos pragyvenimui: Pasiskolinti negalite. Jūsų minimalios lėšos pragyvenimui ${minIncome} €, tačiau jums lieka ${disposible} €.`;
+        document.getElementById("disposibles").style.color = "red";
+    } else {
+        document.getElementById("disposibles").innerHTML = `Lėšos pragyvenimui: Jūsų minimalios lėšos pragyvenimui ${minIncome} €, jums lieka ${disposible} €.`;
+        document.getElementById("disposibles").style.color = "black";
+    }
 
 
 
