@@ -185,7 +185,7 @@ function calculateMortgage() {
     document.getElementById("monthly-payment").innerHTML = `Mėn. įmoka už būsto kreditą: ${mp} €`;
 
 
-    document.getElementById("DSTI").innerHTML = `DTI stess (kai palūkanos padidėja ${1.5}%): ${DSTI} %`;
+  
 
 
     document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${maxLoan} €`;
@@ -204,6 +204,21 @@ function calculateMortgage() {
         document.getElementById("DTI").style.color = "black";
         document.getElementById("max-loan").style.color = "black";
     }
+
+    if (DSTI>50) {
+        document.getElementById("DSTI").innerHTML = `DTI stess (kai palūkanos padidėja ${1.5}%): ${DSTI} %. Nepraeinate jautrumo testo! Maksimali reikšmė 50%.`;
+        document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
+        document.getElementById("max-loan").style.color = "red";
+        document.getElementById("DSTI").style.color = "red";
+    } else {
+        document.getElementById("DSTI").innerHTML = `DTI stess (kai palūkanos padidėja ${1.5}%): ${DSTI} %.`;
+        document.getElementById("DSTI").style.color = "black";
+        document.getElementById("max-loan").style.color = "black";
+    }
+
+
+
+
 
     if (LTI>75) {
         document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, visi įsipareigojimai negali būti didesni nei 75 kartai jūsų mėnesinių pajamų.`;
