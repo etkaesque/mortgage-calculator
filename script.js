@@ -184,10 +184,6 @@ function calculateMortgage() {
 
     document.getElementById("monthly-payment").innerHTML = `Mėn. įmoka už būsto kreditą: ${mp} €`;
 
-
-  
-
-
     document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${maxLoan} €`;
 
     document.getElementById("loan-cost").innerHTML = `Bendra sumokama suma: ${loanCost} €`;
@@ -196,7 +192,6 @@ function calculateMortgage() {
 
     if (DTI>40) {
         document.getElementById("DTI").innerHTML = `DTI: ${DTI} %. Pasiskolinti negalite, bendra mėn. įsipareigojimų įmoka negali viršyti 40% mėnesinių pajamų.`;
-        document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
         document.getElementById("max-loan").style.color = "red";
         document.getElementById("DTI").style.color = "red";
     } else {
@@ -207,7 +202,6 @@ function calculateMortgage() {
 
     if (DSTI>50) {
         document.getElementById("DSTI").innerHTML = `DTI stress (kai palūkanos padidėja ${1.5}%): ${DSTI} %. Nepraeinate jautrumo testo! Maksimali reikšmė 50%.`;
-        document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
         document.getElementById("max-loan").style.color = "red";
         document.getElementById("DSTI").style.color = "red";
     } else {
@@ -222,7 +216,6 @@ function calculateMortgage() {
 
     if (LTI>76) {
         document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, visi įsipareigojimai negali būti didesni nei 76 kartai jūsų mėnesinių pajamų.`;
-        document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
         document.getElementById("max-loan").style.color = "red";
         document.getElementById("LTI").style.color = "red";
     } else {
@@ -235,7 +228,6 @@ function calculateMortgage() {
 
         document.getElementById("disposibles").innerHTML = `Lėšos pragyvenimui: Pasiskolinti negalite. Jūsų minimalios lėšos pragyvenimui ${minIncome} €, tačiau po visų įmokų jums lieka ${disposible} €.`;
         document.getElementById("disposibles").style.color = "red";
-        document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${0} €`;
     } else {
         document.getElementById("disposibles").innerHTML = `Lėšos pragyvenimui: Jūsų minimalios lėšos pragyvenimui ${minIncome} €, po visų įmokų jums lieka ${disposible} €.`;
         document.getElementById("disposibles").style.color = "black";
