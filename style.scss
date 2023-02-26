@@ -29,6 +29,7 @@ $width-sm: 649px;
 
 body {
     margin: 0px;
+    font-family: 'Mulish', sans-serif;
 }
 
 .main {
@@ -112,6 +113,10 @@ body {
                 row-gap: 20px;
             }
 
+            label {
+                text-align: center;
+            }
+
             .input-info {
                 display: flex;
                 align-content: center;
@@ -157,6 +162,13 @@ body {
                     left: 40px;
                     width: 200px;
 
+                    @include sm() {
+                        right: 40px;
+                        left: unset;
+                     }
+ 
+
+                 
 
                 }
 
@@ -180,6 +192,7 @@ body {
 
                         visibility: visible;
                         z-index: 1;
+     
                     }
 
                 }

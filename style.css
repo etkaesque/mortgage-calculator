@@ -4,6 +4,7 @@
 
 body {
   margin: 0px;
+  font-family: "Mulish", sans-serif;
 }
 
 .main {
@@ -72,6 +73,9 @@ body {
     row-gap: 20px;
   }
 }
+.main .calculator-input .input-wrapper label {
+  text-align: center;
+}
 .main .calculator-input .input-wrapper .input-info {
   display: flex;
   align-content: center;
@@ -108,6 +112,12 @@ body {
   position: absolute;
   left: 40px;
   width: 200px;
+}
+@media (max-width: 649px) {
+  .main .calculator-input .input-wrapper .info-wrapper .info-text {
+    right: 40px;
+    left: unset;
+  }
 }
 .main .calculator-input .input-wrapper .info-wrapper svg {
   width: 25px;
