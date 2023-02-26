@@ -1,127 +1,265 @@
-.main,
-.header {
+$width-xl: 999px;
+$width-md: 768px;
+$width-sm: 649px;
 
-    margin-left: 20px;
 
-    font-family: 'Mulish', sans-serif;
+@mixin xl {
+    @media (max-width: $width-xl) {
+        @content;
+    }
+}
 
+@mixin md {
+    @media (max-width: $width-md) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: $width-sm) {
+        @content;
+    }
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
 }
 
 .main {
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1450px;
+    width: 100%;
+    
+
+
+}
+
+.header {
+
+    margin-top: 0px;
+
+    font-family: 'Mulish', sans-serif;
+    .img-wrapper {
+
+        background-image: linear-gradient(0deg, rgba(248, 247, 247, 0) 65%, rgba(1,0,0,0.8) 100%), url('happyhouse.jpg');
+        padding-bottom: 150px;
+        background-position: 70%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px black;
+            margin-left: 20px;
+            margin-bottom: 7px;
+
+        }
+        p {
+            margin-top: 0px;
+            color: white;
+            text-shadow: 2px 2px black;
+            margin-left: 20px;
+            font-size: 1rem;
+        }
+    }
+}
+
+.main {
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    
+
+    @include xl {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+        
+    
+
+    .calculator-input {
+
+        padding: 20px;
+
+        .input-wrapper {
+
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            column-gap: 20px;
+
+            @include sm {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+
+            .input-info {
+                display: flex;
+                align-content: center;
+                align-items: center;
+                column-gap: 10px;
+
+
+            }
+
+            input {
+
+                background-color: rgb(235, 225, 225);
+                border: none;
+                padding: 5px 10px;
+                border-radius: 10px;
+                width: 150px;
+
+                @include sm {
+                    width: 50%;
+                }
+            }
+
+
+
+            .info-wrapper {
+
+                width: 25px;
+                height: 25px;
+                position: relative;
+                display: inline-block;
+
+                .info-text {
+
+
+                    background-color: #02c4c4;
+                    color: white;
+                    padding: 8px 10px;
+                    font-size: 0.85rem;
+                    border-radius: 10px;
+                    visibility: hidden;
+                    display: inline-block;
+                    position: absolute;
+                    left: 40px;
+                    width: 200px;
+
+
+                }
+
+                svg {
+                    width: 25px;
+                    height: 25px;
+                    fill: #02c4c4;
+
+                    &:hover {
+                        fill: blue;
+                    }
+                }
+
+
+
+                &:hover {
+
+                    cursor: pointer;
+
+                    .info-text {
+
+                        visibility: visible;
+                        z-index: 1;
+                    }
+
+                }
+
+
+            }
+
+
+
+        }
+
+        .button-wrap {
+
+            display: flex;
+            justify-content: center;
+
+            .calculate-click {
+
+                margin-top: 50px;
+                background-color: #02c4c4;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 20px;
+                font-family: 'Mulish', sans-serif;
+                color: whitesmoke;
+                font-size: 1.2rem;
+                cursor: pointer;
+            
+                &:hover {
+                    color: white;
+                    background-color: blue;
+                }
+            
+                &:active {
+            
+                    opacity: .8;
+                }
+            
+            }
+        }
+
+      
+
+
+    }
+
+    .calculator-output {
+        padding: 20px;
+    }
+
     .calculator-explained {
         margin-top: 100px;
-    }
-}
-
-.input-wrapper {
-
-    margin-top: 10px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    column-gap: 20px;
-
-    input {
-
-        background-color: rgb(235, 225, 225);
-        border: none;
-        padding: 5px 10px;
-        border-radius: 10px;
-    }
+        padding: 20px;
+        margin-bottom: 100px;
 
 
-}
+        .more-info {
+            display: block;
+            margin-top: 10px;
 
-.info-text {
+            .links {
+                text-decoration: none;
 
+                color: #02c4c4;
 
-    background-color: #02c4c4;
-    color: white;
-    padding: 8px 10px;
-    font-size: 0.85rem;
-    border-radius: 10px;
-    visibility: hidden;
-    display: inline-block;
-    position: absolute;
-    left: 40px;
-    width: 200px;
+                &:hover {
+                    color: blue;
+                }
 
+                &:active {
 
-}
+                    opacity: .8;
+                }
+            }
 
 
 
-.info-wrapper {
-
-    width: 25px;
-    height: 25px;
-
-    position: relative;
-
-
-    display: inline-block;
-
-    svg {
-        width: 25px;
-        height: 25px;
-    }
-
-
-
-    &:hover {
-
-        cursor: pointer;
-
-        .info-text {
-
-            visibility: visible;
-            z-index: 1;
         }
     }
 
 
 }
 
-.calculate-click {
-    margin-top: 20px;
-    background-color: #02c4c4;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    font-family: 'Mulish', sans-serif;
-    color: whitesmoke;
-
-    &:hover {
-        color: white;
-        background-color: blue;
-    }
-
-    &:active {
-
-        opacity: .8;
-    }
-
-}
-
-.more-info {
-    display: block;
-    margin-top: 10px;
-
-    .links {
-        text-decoration: none;
-
-        color:  #02c4c4;
-
-        &:hover {
-            color: blue;
-        }
-
-        &:active {
-
-            opacity: .8;
-        }
-    }
 
 
 
-}
+
+
