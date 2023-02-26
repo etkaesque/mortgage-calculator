@@ -30,6 +30,8 @@ body {
   text-shadow: 2px 2px black;
   margin-left: 20px;
   margin-bottom: 7px;
+  margin-top: 0px;
+  padding-top: 5px;
 }
 .header .img-wrapper p {
   margin-top: 0px;
