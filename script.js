@@ -174,7 +174,7 @@ function calculateMortgage() {
     document.getElementById("monthly-payment").innerHTML = `Mėn. įmoka už būsto kreditą: ${mp} €`;
 
 
-    document.getElementById("DSTI").innerHTML = `DTI stess (kai palūnaos padidėja 2%): ${DSTI} %`;
+    document.getElementById("DSTI").innerHTML = `DTI stess: ${DSTI} %`;
 
 
     document.getElementById("max-loan").innerHTML = `Maksimaliai galima pasiskolinti: ${maxLoan} €`;
