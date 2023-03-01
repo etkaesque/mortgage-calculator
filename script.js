@@ -214,8 +214,8 @@ function calculateMortgage() {
 
 
 
-    if (LTI>76) {
-        document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, visi įsipareigojimai negali būti didesni nei 76 kartai jūsų mėnesinių pajamų.`;
+    if (LTI>75) {
+        document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, visi įsipareigojimai negali būti didesni nei 75 kartai jūsų mėnesinių pajamų.`;
         document.getElementById("max-loan").style.color = "red";
         document.getElementById("LTI").style.color = "red";
     } else {
