@@ -250,6 +250,9 @@ body {
 .footer .calculator-explained .explain .explain-text.explain-text-2, .footer .calculator-explained .explain.explain-2 .explain-text.explain-text-2 {
   grid-column: 2/3;
 }
+.explain-text,.explain-text.explain-text-2 {
+font-size: 1.5rem;
+}
 @media (max-width: 649px) {
   .footer .calculator-explained .explain .explain-text.explain-text-2, .footer .calculator-explained .explain.explain-2 .explain-text.explain-text-2 {
     grid-column: 1/2;
