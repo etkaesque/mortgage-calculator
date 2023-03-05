@@ -122,7 +122,7 @@ function calculateMortgage() {
 
     // 2.1 MAX LTI: Will calculate maximum loan amount based on LTI. Annual income times 6 minus obilgation amount
 
-    maxLTI = (monthlyIncome * 73) - obligationsAmount
+    maxLTI = (monthlyIncome * 7) - obligationsAmount
 
     console.log(`Max LTI loan amount is ${maxLTI} €`)
 
@@ -214,8 +214,8 @@ function calculateMortgage() {
 
 
 
-    if (LTI>75) {
-        document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, visi įsipareigojimai negali būti didesni nei 75 kartai jūsų mėnesinių pajamų.`;
+    if (LTI>76) {
+        document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, visi įsipareigojimai negali būti didesni nei 76 kartai jūsų mėnesinių pajamų.`;
         document.getElementById("max-loan").style.color = "red";
         document.getElementById("LTI").style.color = "red";
     } else {
