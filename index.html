@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Paskolos skaičiuoklė</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -180,18 +180,24 @@
 
             <h2>Informacija apie paskolą</h2>
 
+            <ul class="output-list">
+                <li id="monthly-payment">Mėn. įmoka už būsto kreditą:</li>
+                <li id="DTI">DTI:</li>
+                <li id="DSTI">DTI stress:</li>
+                <li id="disposibles">Lėšos pragyvenimui: </li>
+                <li id="LTI">LTI:</li>
+                <li id="max-loan">Maksimaliai galima pasiskolinti:</li>
+                <li id="loan-cost">Bendra sumokama suma:</li>
+                <li id="total-interest">Iš viso sumokama palūkanų:</li>
+                <li id="anuity">Metodas: Anuitetas</li>
+            </ul>
 
-            <p id="monthly-payment">Mėn. įmoka už būsto kreditą:</p>
-            <p id="DTI">DTI:</p>
-            <p id="DSTI">DTI stress:</p>
-            <p id="disposibles">Lėšos pragyvenimui: </p>
-            <p id="LTI">LTI:</p>
-            <p id="max-loan">Maksimaliai galima pasiskolinti:</p>
-            <p id="loan-cost">Bendra sumokama suma:</p>
-            <p id="total-interest">Iš viso sumokama palūkanų:</p>
-            <p id="anuity">Metodas: Anuitetas</p>
 
+            <div class="button-wrap">
 
+                <button id="schedule" class="calculate-click" ><a target="_blank" href="schedule.html">Grafikas</a></button>
+            
+            </div>
 
 
 
@@ -295,6 +301,8 @@
 
 
     <script src="script.js"></script>
+ 
+
 
 </body>
 

@@ -173,7 +173,7 @@ function calculateMortgage() {
         maxLoan = maxDTI
     }
 
-    // calculates if disposible income is enough to live by using DTI stress
+    // calculates if disposible income is enough to live by using DTI 
     
     let disposible = monthlyIncome - obligationsMonthly - monthlyMortagePayment(interestDecimal, loanAmount, loanPeriod)
 
@@ -238,3 +238,4 @@ function calculateMortgage() {
 
 
 }
+

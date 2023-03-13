@@ -45,6 +45,50 @@ body {
 
 }
 
+
+.button-wrap {
+
+    display: flex;
+    justify-content: center;
+
+
+    .calculate-click {
+
+        margin-top: 50px;
+        background-color: #02c4c4;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 20px;
+        font-family: 'Mulish', sans-serif;
+        color: whitesmoke;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        &:hover {
+            color: white;
+            background-color: blue;
+        }
+
+        &:active {
+
+            opacity: .8;
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
 .header {
 
     margin-top: 0px;
@@ -156,6 +200,10 @@ body {
     .calculator-input {
 
         padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
 
         .input-wrapper {
@@ -269,36 +317,6 @@ body {
 
         }
 
-        .button-wrap {
-
-            display: flex;
-            justify-content: center;
-
-            .calculate-click {
-
-                margin-top: 50px;
-                background-color: #02c4c4;
-                border: none;
-                padding: 10px 15px;
-                border-radius: 20px;
-                font-family: 'Mulish', sans-serif;
-                color: whitesmoke;
-                font-size: 1.2rem;
-                cursor: pointer;
-
-                &:hover {
-                    color: white;
-                    background-color: blue;
-                }
-
-                &:active {
-
-                    opacity: .8;
-                }
-
-            }
-        }
-
 
 
 
@@ -306,6 +324,22 @@ body {
 
     .calculator-output {
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .output-list {
+
+           padding-left: 0px;
+
+            li {
+                list-style-type: none;
+                font-size: 1.2rem;
+                margin-top: 10px;
+               
+            }
+
+        }
     }
 
 
@@ -367,8 +401,8 @@ body {
                 justify-self: end;
 
                 width: 100%;
-            
-           
+
+
 
                 @include md {
 
@@ -381,18 +415,18 @@ body {
 
 
                 height: 100%;
-                
+
 
                 img {
                     margin-top: 30px;
                     width: 100%;
-                   
+
                 }
 
                 cite {
-                    
+
                     font-size: 0.7em;
-                  
+
                 }
 
             }

@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    font-family: 'Mulish', sans-serif;
+
+    .wrapper {
+
+        margin-left: 20px;
+        .schedule {
+
+            width: auto;
+            
+    
+           
+    
+            thead {
+                tr {
+                    th {
+                        padding: 10px;
+                        background-color: #02c4c4;
+                        color: #ffecec;
+                        border-radius: 8px;
+                        
+                    }
+                }
+    
+            }
+    
+            tbody {
+    
+                tr {
+                    text-align: end;
+                  
+                }
+            }
+        }
+
+
+    }
+
+ 
+}
