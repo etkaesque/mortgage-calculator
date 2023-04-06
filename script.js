@@ -216,7 +216,7 @@ function calculateMortgage() {
         document.getElementById("max-loan").style.color = "black";
     }
 
-
+// labas
 
 
 
