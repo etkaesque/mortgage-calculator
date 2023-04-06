@@ -1,19 +1,11 @@
 body {
-  margin: 0px;
-  font-family: "Mulish", sans-serif;
+  padding: 20px;
 }
-body .wrapper {
-  margin-left: 20px;
+
+.schedule-info {
+  text-align: center;
 }
-body .wrapper .schedule {
-  width: auto;
-}
-body .wrapper .schedule thead tr th {
-  padding: 10px;
-  background-color: #02c4c4;
-  color: #ffecec;
-  border-radius: 8px;
-}
-body .wrapper .schedule tbody tr {
-  text-align: end;
+
+table {
+  text-align: center;
 }/*# sourceMappingURL=schedule.css.map */

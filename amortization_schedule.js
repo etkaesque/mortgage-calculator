@@ -68,15 +68,26 @@ function calculateAmortizationSchedule(loanAmount, interestRate, loanTermYears) 
   
   
   function grafikas() {
+    
+
+    console.log(localStorage.getItem("interest"))
+    console.log(localStorage.getItem("loanAmount"))
+    console.log(localStorage.getItem("loadperiod"))
+
+  
+
+  
+    let loanTermYears = parseInt(localStorage.getItem("loadperiod"))
+    console.log(loanTermYears)
+  
+    let loanAmount = parseInt(localStorage.getItem("loanAmount"))
   
   
-    let loanTermYears = 30
-  
-  
-    let loanAmount = 100000
-  
-  
-    let interestRate = 5
+    let interestRate = parseInt(localStorage.getItem("interest"))
+
+
+    const output = document.querySelector(`.info`)
+    output.innerHTML = `Paskolos suma: ${loanAmount}, laikotarpis: ${loanTermYears} metų, palūkanos: ${interestRate}%`
   
   
     const payments = calculateAmortizationSchedule(loanAmount, interestRate, loanTermYears);
@@ -84,6 +95,8 @@ function calculateAmortizationSchedule(loanAmount, interestRate, loanTermYears) 
   
   
   }
+
+
 
   grafikas()
   

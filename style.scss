@@ -184,15 +184,18 @@ body {
     column-gap: 80px;
     font-size: 1.2rem;
     padding: 20px;
+  
 
 
     @include xl {
         grid-template-columns: 1fr;
         width: 100%;
+        height: auto;
     }
 
     h2 {
         text-align: center;
+        margin-bottom: 40px;
     }
 
 
@@ -289,6 +292,8 @@ body {
                     width: 25px;
                     height: 25px;
                     fill: #02c4c4;
+                    position: relative;
+                    top: -6px;
 
                     &:hover {
                         fill: blue;
@@ -328,25 +333,14 @@ body {
         flex-direction: column;
         justify-content: space-between;
 
-        .output-list {
-
-           padding-left: 0px;
-
-            li {
-                list-style-type: none;
-                font-size: 1.2rem;
-                margin-top: 10px;
-               
-            }
-
-        }
+       
     }
 
 
 
 }
 
-.footer {
+.wrapper-explanation {
 
     font-family: 'Mulish', sans-serif;
 

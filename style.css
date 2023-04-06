@@ -118,10 +118,12 @@ body {
   .main {
     grid-template-columns: 1fr;
     width: 100%;
+    height: auto;
   }
 }
 .main h2 {
   text-align: center;
+  margin-bottom: 40px;
 }
 .main .calculator-input {
   padding: 20px;
@@ -201,6 +203,8 @@ body {
   width: 25px;
   height: 25px;
   fill: #02c4c4;
+  position: relative;
+  top: -6px;
 }
 .main .calculator-input .input-wrapper .info-wrapper svg:hover {
   fill: blue;
@@ -218,16 +222,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.main .calculator-output .output-list {
-  padding-left: 0px;
-}
-.main .calculator-output .output-list li {
-  list-style-type: none;
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
 
-.footer {
+.wrapper-explanation {
   font-family: "Mulish", sans-serif;
   margin-top: 50px;
   margin-bottom: 0px;
@@ -237,20 +233,20 @@ body {
   font-family: "Mulish", sans-serif;
 }
 @media (max-width: 999px) {
-  .footer {
+  .wrapper-explanation {
     width: 100%;
   }
 }
-.footer .calculator-explained {
+.wrapper-explanation .calculator-explained {
   margin-top: 0px;
   padding: 20px;
   margin-bottom: 100px;
 }
-.footer .calculator-explained h2 {
+.wrapper-explanation .calculator-explained h2 {
   font-size: 1.75rem;
 }
-.footer .calculator-explained .explain,
-.footer .calculator-explained .explain.explain-2 {
+.wrapper-explanation .calculator-explained .explain,
+.wrapper-explanation .calculator-explained .explain.explain-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
@@ -259,22 +255,22 @@ body {
   margin-top: 50px;
 }
 @media (max-width: 768px) {
-  .footer .calculator-explained .explain,
-  .footer .calculator-explained .explain.explain-2 {
+  .wrapper-explanation .calculator-explained .explain,
+  .wrapper-explanation .calculator-explained .explain.explain-2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
   }
 }
-.footer .calculator-explained .explain h3,
-.footer .calculator-explained .explain .LTI,
-.footer .calculator-explained .explain.explain-2 h3,
-.footer .calculator-explained .explain.explain-2 .LTI {
+.wrapper-explanation .calculator-explained .explain h3,
+.wrapper-explanation .calculator-explained .explain .LTI,
+.wrapper-explanation .calculator-explained .explain.explain-2 h3,
+.wrapper-explanation .calculator-explained .explain.explain-2 .LTI {
   font-size: 1.3rem;
 }
-.footer .calculator-explained .explain .loan-cat,
-.footer .calculator-explained .explain .loan-cat.loan-cat-2,
-.footer .calculator-explained .explain.explain-2 .loan-cat,
-.footer .calculator-explained .explain.explain-2 .loan-cat.loan-cat-2 {
+.wrapper-explanation .calculator-explained .explain .loan-cat,
+.wrapper-explanation .calculator-explained .explain .loan-cat.loan-cat-2,
+.wrapper-explanation .calculator-explained .explain.explain-2 .loan-cat,
+.wrapper-explanation .calculator-explained .explain.explain-2 .loan-cat.loan-cat-2 {
   grid-row: 2/3;
   grid-column: 2/3;
   justify-self: end;
@@ -282,79 +278,79 @@ body {
   height: 100%;
 }
 @media (max-width: 768px) {
-  .footer .calculator-explained .explain .loan-cat,
-  .footer .calculator-explained .explain .loan-cat.loan-cat-2,
-  .footer .calculator-explained .explain.explain-2 .loan-cat,
-  .footer .calculator-explained .explain.explain-2 .loan-cat.loan-cat-2 {
+  .wrapper-explanation .calculator-explained .explain .loan-cat,
+  .wrapper-explanation .calculator-explained .explain .loan-cat.loan-cat-2,
+  .wrapper-explanation .calculator-explained .explain.explain-2 .loan-cat,
+  .wrapper-explanation .calculator-explained .explain.explain-2 .loan-cat.loan-cat-2 {
     grid-column: 1/2;
     grid-row: 3/4;
     justify-self: start;
     width: 100%;
   }
 }
-.footer .calculator-explained .explain .loan-cat img,
-.footer .calculator-explained .explain .loan-cat.loan-cat-2 img,
-.footer .calculator-explained .explain.explain-2 .loan-cat img,
-.footer .calculator-explained .explain.explain-2 .loan-cat.loan-cat-2 img {
+.wrapper-explanation .calculator-explained .explain .loan-cat img,
+.wrapper-explanation .calculator-explained .explain .loan-cat.loan-cat-2 img,
+.wrapper-explanation .calculator-explained .explain.explain-2 .loan-cat img,
+.wrapper-explanation .calculator-explained .explain.explain-2 .loan-cat.loan-cat-2 img {
   margin-top: 30px;
   width: 100%;
 }
-.footer .calculator-explained .explain .loan-cat cite,
-.footer .calculator-explained .explain .loan-cat.loan-cat-2 cite,
-.footer .calculator-explained .explain.explain-2 .loan-cat cite,
-.footer .calculator-explained .explain.explain-2 .loan-cat.loan-cat-2 cite {
+.wrapper-explanation .calculator-explained .explain .loan-cat cite,
+.wrapper-explanation .calculator-explained .explain .loan-cat.loan-cat-2 cite,
+.wrapper-explanation .calculator-explained .explain.explain-2 .loan-cat cite,
+.wrapper-explanation .calculator-explained .explain.explain-2 .loan-cat.loan-cat-2 cite {
   font-size: 0.7em;
 }
-.footer .calculator-explained .explain .explain-text,
-.footer .calculator-explained .explain .explain-text.explain-text-2,
-.footer .calculator-explained .explain.explain-2 .explain-text,
-.footer .calculator-explained .explain.explain-2 .explain-text.explain-text-2 {
+.wrapper-explanation .calculator-explained .explain .explain-text,
+.wrapper-explanation .calculator-explained .explain .explain-text.explain-text-2,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text.explain-text-2 {
   grid-row: 2/3;
 }
-.footer .calculator-explained .explain .explain-text p,
-.footer .calculator-explained .explain .explain-text.explain-text-2 p,
-.footer .calculator-explained .explain.explain-2 .explain-text p,
-.footer .calculator-explained .explain.explain-2 .explain-text.explain-text-2 p {
+.wrapper-explanation .calculator-explained .explain .explain-text p,
+.wrapper-explanation .calculator-explained .explain .explain-text.explain-text-2 p,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text p,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text.explain-text-2 p {
   font-size: 1.1rem;
 }
-.footer .calculator-explained .explain .explain-text .more-info,
-.footer .calculator-explained .explain .explain-text.explain-text-2 .more-info,
-.footer .calculator-explained .explain.explain-2 .explain-text .more-info,
-.footer .calculator-explained .explain.explain-2 .explain-text.explain-text-2 .more-info {
+.wrapper-explanation .calculator-explained .explain .explain-text .more-info,
+.wrapper-explanation .calculator-explained .explain .explain-text.explain-text-2 .more-info,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text .more-info,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text.explain-text-2 .more-info {
   display: block;
   margin-top: 10px;
 }
-.footer .calculator-explained .explain .explain-text .more-info .links,
-.footer .calculator-explained .explain .explain-text.explain-text-2 .more-info .links,
-.footer .calculator-explained .explain.explain-2 .explain-text .more-info .links,
-.footer .calculator-explained .explain.explain-2 .explain-text.explain-text-2 .more-info .links {
+.wrapper-explanation .calculator-explained .explain .explain-text .more-info .links,
+.wrapper-explanation .calculator-explained .explain .explain-text.explain-text-2 .more-info .links,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text .more-info .links,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text.explain-text-2 .more-info .links {
   text-decoration: none;
   color: #02c4c4;
 }
-.footer .calculator-explained .explain .explain-text .more-info .links:hover,
-.footer .calculator-explained .explain .explain-text.explain-text-2 .more-info .links:hover,
-.footer .calculator-explained .explain.explain-2 .explain-text .more-info .links:hover,
-.footer .calculator-explained .explain.explain-2 .explain-text.explain-text-2 .more-info .links:hover {
+.wrapper-explanation .calculator-explained .explain .explain-text .more-info .links:hover,
+.wrapper-explanation .calculator-explained .explain .explain-text.explain-text-2 .more-info .links:hover,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text .more-info .links:hover,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text.explain-text-2 .more-info .links:hover {
   color: blue;
 }
-.footer .calculator-explained .explain .explain-text .more-info .links:active,
-.footer .calculator-explained .explain .explain-text.explain-text-2 .more-info .links:active,
-.footer .calculator-explained .explain.explain-2 .explain-text .more-info .links:active,
-.footer .calculator-explained .explain.explain-2 .explain-text.explain-text-2 .more-info .links:active {
+.wrapper-explanation .calculator-explained .explain .explain-text .more-info .links:active,
+.wrapper-explanation .calculator-explained .explain .explain-text.explain-text-2 .more-info .links:active,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text .more-info .links:active,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text.explain-text-2 .more-info .links:active {
   opacity: 0.8;
 }
-.footer .calculator-explained .explain .explain-text.explain-text-2,
-.footer .calculator-explained .explain.explain-2 .explain-text.explain-text-2 {
+.wrapper-explanation .calculator-explained .explain .explain-text.explain-text-2,
+.wrapper-explanation .calculator-explained .explain.explain-2 .explain-text.explain-text-2 {
   grid-column: 2/3;
 }
 @media (max-width: 768px) {
-  .footer .calculator-explained .explain .explain-text.explain-text-2,
-  .footer .calculator-explained .explain.explain-2 .explain-text.explain-text-2 {
+  .wrapper-explanation .calculator-explained .explain .explain-text.explain-text-2,
+  .wrapper-explanation .calculator-explained .explain.explain-2 .explain-text.explain-text-2 {
     grid-column: 1/2;
   }
 }
-.footer .calculator-explained .explain .loan-cat.loan-cat-2,
-.footer .calculator-explained .explain.explain-2 .loan-cat.loan-cat-2 {
+.wrapper-explanation .calculator-explained .explain .loan-cat.loan-cat-2,
+.wrapper-explanation .calculator-explained .explain.explain-2 .loan-cat.loan-cat-2 {
   grid-column: 1/2;
   justify-self: start;
 }/*# sourceMappingURL=style.css.map */

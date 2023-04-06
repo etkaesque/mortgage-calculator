@@ -8,15 +8,21 @@ function calculateMortgage() {
 
     console.log(`Paskolos ilgis: ${loanPeriod} metų`)
 
+    localStorage.setItem("loadperiod",`${loanPeriod}`)
+
 
     // let loanAmount = document.getElementById('loanamount').value;
 
     let loanAmount = document.getElementById('loanamount').valueAsNumber;
 
+    localStorage.setItem("loanAmount",`${loanAmount}`)
+
     console.log(`Paskolos suma: ${loanAmount} €`)
 
     // let interest = document.getElementById('interest').value;
     let interest = document.getElementById('interest').valueAsNumber;
+
+    localStorage.setItem("interest",`${interest}`)
 
     console.log(`Palūkanų norma: ${interest} %`)
 
@@ -49,7 +55,7 @@ function calculateMortgage() {
     let interestStress = interest + 1.5;
 
     // 1.2 define minimal income 
-    let minIncome = kids * 215 + adults * 575
+    let minIncome = kids * 240 + adults * 610
 
 
     console.log("Min income"+ minIncome)
@@ -122,7 +128,7 @@ function calculateMortgage() {
 
     // 2.1 MAX LTI: Will calculate maximum loan amount based on LTI. Annual income times 6 minus obilgation amount
 
-    maxLTI = (monthlyIncome * 7) - obligationsAmount
+    maxLTI = (monthlyIncome * 74) - obligationsAmount
 
     console.log(`Max LTI loan amount is ${maxLTI} €`)
 
@@ -214,7 +220,7 @@ function calculateMortgage() {
 
 
 
-    if (LTI>76) {
+    if (LTI>74) {
         document.getElementById("LTI").innerHTML = `LTI: ${LTI}. Pasiskolinti negalite, visi įsipareigojimai negali būti didesni nei 76 kartai jūsų mėnesinių pajamų.`;
         document.getElementById("max-loan").style.color = "red";
         document.getElementById("LTI").style.color = "red";
