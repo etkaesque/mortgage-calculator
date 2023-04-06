@@ -77,13 +77,13 @@ function calculateAmortizationSchedule(loanAmount, interestRate, loanTermYears) 
   
 
   
-    let loanTermYears = parseInt(localStorage.getItem("loadperiod"))
+    let loanTermYears = Number(localStorage.getItem("loadperiod"))
     console.log(loanTermYears)
   
-    let loanAmount = parseInt(localStorage.getItem("loanAmount"))
+    let loanAmount = Number(localStorage.getItem("loanAmount"))
   
   
-    let interestRate = parseInt(localStorage.getItem("interest"))
+    let interestRate = Number(localStorage.getItem("interest"))
 
 
     const output = document.querySelector(`.info`)
